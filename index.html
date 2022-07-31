@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ToDo</title>
+    <link rel="icon" type="image/x-icon" href="./images/content/logo.svg">
+<link rel="icon" href="logo.svg"><script defer src="js/app.js"></script><link href="css/app.css" rel="stylesheet"></head>
+
+<body>
+
+    <div class="container">
+        <nav class="nav">
+            <div class="nav-left">
+                <img class="logo" src="./images/content/logo.svg" alt="Logo">
+                <h1>.ToDo</h1>
+            </div>
+            <div class="nav-right">
+                <img class="icon desktop-nav" src="./images/content/plus.svg" alt="Plus sign">
+                <img class="icon desktop-nav" src="./images/content/notification.svg" alt="Plus sign">
+                <p class="desktop-nav">John Smith</p>
+                <img class="avatar desktop-nav" src="./images/content/avatar.jpg" alt="Account display picture">
+                <img class="icon mobile-nav" src="./images/content/menu.svg" alt="">
+            </div>
+        </nav>
+        <aside class="aside">
+            <div class="time">
+                <div class="visible dropdown">
+                    <h1>Today</h1>
+                    <img class="icon arrow" src="./images/content/up-arrow.svg" alt="down arrow">
+                </div>
+                <ul id="today">
+                </ul>
+            </div>
+            <div class="time">
+                <div class="visible dropdown">
+                    <h1>This Week</h1>
+                    <img class="icon arrow" src="./images/content/up-arrow.svg" alt="down arrow">
+                </div>
+                <ul id="thisweek">
+                </ul>
+            </div>
+            <div class="time">
+                <div class="visible dropdown">
+                    <h1>This Month</h1>
+                    <img class="icon arrow" src="./images/content/up-arrow.svg" alt="down arrow">
+                </div>
+                <ul id="thismonth">
+                </ul>
+            </div>
+            <div class="time">
+                <div class="visible dropdown">
+                    <h1>This Year</h1>
+                    <img class="icon arrow" src="./images/content/up-arrow.svg" alt="down arrow">
+                </div>
+                <ul id="thisyear">
+                </ul>
+            </div>
+            <div class="time">
+                <div class="visible dropdown">
+                    <h1>Future</h1>
+                    <img class="icon arrow" src="./images/content/up-arrow.svg" alt="down arrow">
+                </div>
+                <ul id="future">
+                </ul>
+            </div>
+        </aside>
+        <main class="main">
+            <div class="main-container-info">
+                <h1>Your Tasks</h1>
+                <div class="main-container-add">
+                    <h1 class="purple-font">Add A Task</h1>
+                    <img class="logo" id="add" src="./images/content/plus2.svg" alt="Plus sign">
+                </div>
+            </div>
+            <div id="main-container" class="main-container">
+            </div>
+        </main>
+        <dialog class="modal" id="modal">
+            <div class="modal-container">
+                <div class="modal-info">
+                    <h1>Enter Task</h1>
+                    <img id="close" class="icon" src="./images/content/close.svg" alt="close icon">
+                </div>
+                <form>
+                    <label id="titleBox">Title:</label>
+                    <input id="title" type="text">
+                    <label>Description:</label>
+                    <input id="description" type="text">
+                    <label>Due Date:</label>
+                    <input id="date" type="date">
+                    <label for="priority">Priority:</label>
+                    <select id="priority" name="priority">
+                    <option value="1">Low</option>
+                    <option value="2">Medium</option>
+                    <option value="3">High</option>
+                    <option value="4">Urgent</option>
+                </select>
+                    <label>Notes:</label>
+                    <textarea id="notes"></textarea>
+                </form>
+                <button class="button-style button-style-primary" id="submit">Submit</button>
+            </div>
+        </dialog>
+        <footer class="footer">
+            <div>
+                <p>Copyright 2022 Ash Madden</p>
+                <a href="https://github.com/ashmaddenweb"> <img class="icon" src="./images/content/github.svg" alt="Plus sign">
+                </a>
+                <a href="https://innerworld.com.au"> <img class="icon" src="./images/content/globe.svg" alt="Plus sign">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+
+
+</body>
+
+</html>
